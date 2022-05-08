@@ -1,20 +1,42 @@
 {
   "name": "@florianf22/react-component-library",
-  "version": "0.0.1",
+  "version": "1.0.9",
   "description": "A react component library",
   "scripts": {
-    "rollup": "rollup -c"
+    "rollup": "rollup -c",
+    "test": "jest",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "author": "George Pasieshvili",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.17.10",
+    "@babel/preset-env": "^7.17.10",
+    "@babel/preset-react": "^7.16.7",
+    "@babel/preset-typescript": "^7.16.7",
     "@rollup/plugin-commonjs": "^22.0.0",
     "@rollup/plugin-node-resolve": "^13.3.0",
     "@rollup/plugin-typescript": "^8.3.2",
+    "@storybook/addon-actions": "^6.4.22",
+    "@storybook/addon-essentials": "^6.4.22",
+    "@storybook/addon-interactions": "^6.4.22",
+    "@storybook/addon-links": "^6.4.22",
+    "@storybook/react": "^6.4.22",
+    "@storybook/testing-library": "0.0.11",
+    "@testing-library/react": "^13.2.0",
+    "@types/jest": "^27.5.0",
     "@types/react": "^18.0.9",
+    "babel-jest": "^28.1.0",
+    "babel-loader": "^8.2.5",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^28.1.0",
+    "jest-environment-jsdom": "^28.1.0",
+    "postcss": "^8.4.13",
     "react": "^18.1.0",
     "rollup": "^2.72.0",
     "rollup-plugin-dts": "^4.2.1",
+    "rollup-plugin-postcss": "^4.0.2",
     "tslib": "^2.4.0",
     "typescript": "^4.6.4"
   },
@@ -26,5 +48,8 @@
   "types": "dist/index.d.ts",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/florianf22"
+  },
+  "dependencies": {
+    "react-dom": "^18.1.0"
   }
 }
