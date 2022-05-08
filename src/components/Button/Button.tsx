@@ -1,14 +1,30 @@
 import * as React from 'react';
 import './Button.css';
 
-interface Props {
-  label: string;
-}
+type Props = {
+  children: React.ReactNode;
+  className?: string;
+};
 
-const Button = (props: Props) => {
-  const { label } = props;
+type PrimaryButtonProps = {
+  primary?: boolean;
+  secondary?: never;
+};
 
-  return <button>{label}</button>;
+type SecondaryButtonProps = {
+  primary?: never;
+  secondary?: boolean;
+};
+
+const Button = (props: Props & (PrimaryButtonProps | SecondaryButtonProps)) => {
+  const { children, className, primary = true } = props;
+  const cls = primary ? 'primary' : 'secondary';
+
+  return (
+    <button {...props} className={`${cls} ${className}`}>
+      {children}
+    </button>
+  );
 };
 
 export default Button;
