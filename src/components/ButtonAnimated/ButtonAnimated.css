@@ -1,0 +1,194 @@
+.ButtonAnimated-Wrapper {
+  display: inline-flex;
+  height: 40px;
+  width: 150px;
+  border: 2px solid #bfc0c0;
+  margin: 20px;
+  color: #bfc0c0;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.8em;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.LinkWrapper {
+  --color: #bfc0c0;
+  --hover: #2d3142;
+}
+
+.ButtonAnimated-Link {
+  color: var(--color, #bfc0c0);
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+/* Slide Button */
+
+.ButtonAnimated-SlideWrapper {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.ButtonAnimated-SlideWrapper a {
+  position: relative;
+  transition: all 0.35s ease-Out;
+}
+
+.ButtonAnimated-Slide {
+  width: 100%;
+  height: 100%;
+  left: -200px;
+  background-color: var(--color, #bfc0c0);
+  position: absolute;
+  transition: all 0.35s ease-Out;
+  bottom: 0;
+}
+
+.ButtonAnimated-SlideWrapper:hover .ButtonAnimated-Slide {
+  left: 0;
+}
+.ButtonAnimated-SlideWrapper:hover a {
+  color: var(--hover, #2d3142);
+}
+
+/* Circle Button */
+
+.ButtonAnimated-CircleWrapper {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.ButtonAnimated-CircleWrapper a {
+  position: relative;
+  transition: all 0.45s ease-Out;
+}
+
+.ButtonAnimated-Circle {
+  width: 0%;
+  height: 0%;
+  opacity: 0;
+  line-height: 40px;
+  border-radius: 50%;
+  background-color: var(--color, #bfc0c0);
+  position: absolute;
+  transition: all 0.5s ease-Out;
+  top: 20px;
+  left: 70px;
+}
+
+.ButtonAnimated-CircleWrapper:hover .ButtonAnimated-Circle {
+  width: 200%;
+  height: 500%;
+  opacity: 1;
+  top: -70px;
+  left: -70px;
+}
+
+.ButtonAnimated-CircleWrapper:hover a {
+  color: var(--hover, #2d3142);
+}
+
+/* Underline */
+
+.ButtonAnimated-UnderlineWrapper {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.ButtonAnimated-UnderlineWrapper a {
+  position: relative;
+  transition: all 0.45s ease-Out;
+}
+
+.ButtonAnimated-Underline {
+  width: 100%;
+  height: 2.5px;
+  margin-top: 15px;
+  align-self: flex-end;
+  left: -200px;
+  background-color: var(--color, #bfc0c0);
+  position: absolute;
+  transition: all 0.3s ease-Out;
+  bottom: 0;
+}
+
+.ButtonAnimated-UnderlineWrapper:hover .ButtonAnimated-Underline {
+  left: 0;
+}
+
+/* Translate */
+
+.ButtonAnimated-TranslateWrapper {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.ButtonAnimated-TranslateWrapper a {
+  position: relative;
+  transition: all 0.45s ease-Out;
+}
+
+.ButtonAnimated-Translate {
+  transform: rotate(50deg);
+  width: 100%;
+  height: 250%;
+  left: -200px;
+  top: -30px;
+  background-color: var(--color, #bfc0c0);
+  position: absolute;
+  transition: all 0.3s ease-Out;
+}
+
+.ButtonAnimated-TranslateWrapper:hover .ButtonAnimated-Translate {
+  left: 0;
+}
+
+.ButtonAnimated-TranslateWrapper:hover a {
+  color: var(--hover, #2d3142);
+}
+
+/* Spin */
+
+.ButtonAnimated-SpinWrapper {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.ButtonAnimated-SpinWrapper a {
+  position: relative;
+  transition: all 0.45s ease-Out;
+}
+
+.ButtonAnimated-Spin {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  left: 70px;
+  top: 20px;
+  transform: rotate(0deg);
+  background: none;
+  position: absolute;
+  transition: all 0.5s ease-Out;
+}
+
+.ButtonAnimated-SpinWrapper:hover .ButtonAnimated-Spin {
+  width: 200%;
+  height: 500%;
+  opacity: 1;
+  left: -70px;
+  top: -70px;
+  background-color: var(--color, #bfc0c0);
+  transform: rotate(80deg);
+}
+
+.ButtonAnimated-SpinWrapper:hover a {
+  color: var(--hover, #2d3142);
+}

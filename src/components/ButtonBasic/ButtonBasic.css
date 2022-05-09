@@ -1,0 +1,32 @@
+.buttonBasic {
+  padding: 14px 56px;
+
+  cursor: pointer;
+
+  border: none;
+  outline: 0;
+  border-radius: 3px;
+
+  font-weight: 400;
+  font-size: 16px;
+
+  transition: opacity 100ms ease;
+}
+
+.primary {
+  color: #fafafa;
+  background-color: #219ebc;
+}
+
+.secondary {
+  background-color: transparent;
+  color: #219ebc;
+  border: 1px solid #219ebc;
+}
+
+/* hover effects */
+
+.primary:hover,
+.secondary:hover {
+  opacity: 0.8;
+}

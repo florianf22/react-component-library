@@ -1,1 +1,2 @@
-export { default as Button } from './Button';
+export { default as ButtonBasic } from './ButtonBasic';
+export { default as ButtonAnimated } from './ButtonAnimated';
